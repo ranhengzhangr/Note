@@ -11,7 +11,7 @@
 		<p>这是一个HTML的文件</p>
 		<div style="text-align: center; max-width: 750px;">
 			<b>表2.2 部分字符实体的定义</b>
-			<table cellspacing="0" style="border-top: 2px solid black; border-bottom: 2px solid black;">
+			<table cellspacing="0">
 				<tbody>
 					<colgroup span="1"></colgroup>
 					<colgroup span="3">
@@ -19,7 +19,7 @@
 						<col style="border-left: 1px solid black;" />
 						<col style="border-left: 1px solid black;" />
 					</colgroup>
-					<tr style="border-top-width: 0;">
+					<tr style="border-top: 2px solid black;">
 						<td>显示结果</td>
 						<td>描述</td>
 						<td>实体名称</td>
@@ -55,7 +55,7 @@
 						<td>&amp;quot;</td>
 						<td>&amp;&#xFF03;34;</td>
 					</tr>
-					<tr>
+					<tr style="border-bottom: 2px solid black;">
 						<td>&apos;</td>
 						<td>撇号</td>
 						<td>&amp;apos;（IE不支持）</td>
@@ -135,8 +135,38 @@
 		<div class="text">
 			&lt;a&gt;标签包括：href指定链接对象，可以是绝对链接和相对链接；target规定链接对象打开位置；title将在滑鼠指向超链接时显示文字。
 		</div>
-		<div>
+		<div style="text-align: center; max-width: 500px;">
 			<b>表2.3 target 的属性值</b>
+			<table cellspacing="0">
+				<tbody>
+					<colgroup span="1" style="border-right: 1px solid black;"></colgroup>
+					<colgroup span="1" style="width: 60%;"></colgroup>
+					<tr style="border-top: 2px solid black;">
+						<td>值</td>
+						<td>描述</td>
+					</tr>
+					<tr>
+						<td>_blank</td>
+						<td>在新窗口中打开被链接的文档</td>
+					</tr>
+					<tr>
+						<td>_self</td>
+						<td>默认，在相同的框架中打开被链接的文档/td>
+					</tr>
+					<tr>
+						<td>_parent</td>
+						<td>在父框架集中打开被链接的文档</td>
+					</tr>
+					<tr>
+						<td>_top</td>
+						<td>在整个窗口中打开被链接的文档</td>
+					</tr>
+					<tr style="border-bottom: 2px solid black;">
+						<td>framename</td>
+						<td>在指定的框架中打开被链接的文档</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 		
 	</body>
