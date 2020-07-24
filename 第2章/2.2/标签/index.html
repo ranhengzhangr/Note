@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>常用标签</title>
+		<link rel="stylesheet" href="./css/index.css" />
+	</head>
+	<body>
+		<h1>2.2.1 文本与标签</h1>
+		<h2>1.文本</h2>
+		<p>这是一个HTML的文件</p>
+		<div style="text-align: center; max-width: 750px;">
+			<b>表2.2 部分字符实体的定义</b>
+			<table cellspacing="0" style="border-top: 2px solid black; border-bottom: 2px solid black;">
+				<tbody>
+					<colgroup span="1"></colgroup>
+					<colgroup span="3">
+						<col style="border-left: 1px solid black;" />
+						<col style="border-left: 1px solid black;" />
+						<col style="border-left: 1px solid black;" />
+					</colgroup>
+					<tr style="border-top-width: 0;">
+						<td>显示结果</td>
+						<td>描述</td>
+						<td>实体名称</td>
+						<td>实体编号</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>空格</td>
+                        <td>&amp;nbsp;</td>
+						<td>&amp;&#xFF03;160;</td>
+					</tr>
+					<tr>
+						<td>&lt;</td>
+						<td>小于号</td>
+						<td>&amp;lt;</td>
+						<td>&amp;&#xFF03;60;</td>
+					</tr>
+					<tr>
+						<td>&gt;</td>
+						<td>大于号</td>
+						<td>&amp;gt;</td>
+						<td>&amp;&#xFF03;62;</td>
+					</tr>
+					<tr>
+						<td>&amp;</td>
+						<td>和号</td>
+						<td>&amp;amp;</td>
+						<td>&amp;&#xFF03;38;</td>
+					</tr>
+					<tr>
+						<td>&quot;</td>
+						<td>引号</td>
+						<td>&amp;quot;</td>
+						<td>&amp;&#xFF03;34;</td>
+					</tr>
+					<tr>
+						<td>&apos;</td>
+						<td>撇号</td>
+						<td>&amp;apos;（IE不支持）</td>
+						<td>&amp;&#xFF03;39;</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<h2>2.常用标签</h2>
+		<p>（1）注释&lt;!-- &nbsp; --&gt;。</p>
+		<p>（2）换行&lt;br/&gt;。</p>
+        <p>（3）标题h1</p>
+		<div style="text-align: center; max-width: 200px;">
+			<b>表2.4 标题的显示效果</b>
+			<table style="width: 100px; margin: 5px auto 0 auto;">
+				<tbody>
+					<tr>
+						<td class="title" style="text-align: left; border: 1px solid black; padding-left: 10px; line-height: inherit;">
+							<h1>标题1</h1>
+							<h2>标题2</h2>
+							<h3>标题3</h3>
+							<h4>标题4</h4>
+							<h5>标题5</h5>
+							<h6>标题6</h6>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+        <p>（4）段落&lt;p&gt;&lt;/p&gt;</p>
+        <p>（5）块（容器）&lt;div&gt;&lt;/div&gt;</p>
+        <p>（6）区间&lt;span&gt;&lt;/span&gt;</p>
+        <p>（7）列表</p>
+        <div class="text">
+            列表分为无序列表、有序列表和定义列表。
+        </div>
+		<div class="text">
+            ul代表无序列表，每个列表项前仅显示一个点。
+		</div>
+		<div class="text">
+            ol代表有序列表，每个列表项前都有序号。
+		</div>
+		<div class="text">
+            &lt;ul&gt;&lt;/ul&gt;和&lt;ol&gt;&lt;/ol&gt;用于定义列表边界，&lt;li&gt;&lt;/li&gt;表示列表中每个项目，列表之间可相互嵌套。
+		</div>
+        <div style="text-align: center; max-width: 200px; margin-top: 10px;">
+            <b>2.5 列表的显示效果</b>
+			<div style="text-align: left; border: 1px solid black; margin-top: 10px;">
+				<ul>
+					<li>这是一个无序列表</li>
+					<li>下面是内部的一个有序列表</li>
+					<ol>
+						<li>列表项A</li>
+						<li>列表项B</li>
+						<li>列表项C</li>
+					</ol>
+					<li>列表结束</li>
+				</ul>
+			</div>
+        </div>
+		<div class="text">
+			dl代表定义列表。在&lt;dl&gt;&lt;/dl&gt;标签里可以用&lt;dt&gt;表示项目，用&lt;dd&gt;表示描述。
+		</div>
+		<div style="margin-top: 10px; text-align: center; max-width: 350px;">
+			<b>定义列表显示效果</b>
+			<div style="text-align: left; border: 1px solid black; padding-left: 5px;">
+				<dl>
+					<dt>HTML</dt>
+					<dd>HyperText Markup Language 的缩写</dd>
+					<dt>WWW</dt>
+					<dd>World Wide Web 的缩写</dd>
+				</dl>
+			</div>
+		</div>
+		<p>（8）图片&lt;img&gt;&lt;/img&gt;</p>
+		<p>（9）超链接&lt;a&gt;&lt;/a&gt;</p>
+		<div class="text">
+			&lt;a&gt;标签包括：href指定链接对象，可以是绝对链接和相对链接；target规定链接对象打开位置；title将在滑鼠指向超链接时显示文字。
+		</div>
+		<div>
+			<b>表2.3 target 的属性值</b>
+		</div>
+		
+	</body>
+</html>
