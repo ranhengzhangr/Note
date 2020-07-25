@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>表单元素</title>
+		<link rel="stylesheet" href="./css/index.css" />
+	</head>
+	<body>
+		<h1>2.4.1 常用表单元素</h1>
+		<h2>1.表单</h2>
+		<div class="text">
+			表单使用表单标签&lt;form&gt;界定。
+		</div>
+		<h2>2.文本框</h2>
+		<div class="text">在表单中键入内容时使用，仅能键入一行文字。文本框使用输入标签&lt;input&gt;,但输入文本类型由类型属性type定义。（在多数浏览器中，文本框宽度默认为20字符宽）</div>
+		<h2>3.密码框</h2>
+		<div class="text">密码框的设定形式为&lt;input type="password"&gt;,使用密码框时，输入的内容将会隐藏显示。</div>
+		<h2>4.单选按钮</h2>
+		<div class="text">
+			当使用单选按钮时，用户只能从给定选项中进行选择，且单选按钮会根据name标签的内容区分。
+		</div>
+		<div class="box">
+			<div class="title">
+				单选按钮实例
+			</div>
+			<div class="half">
+				HTML代码
+			</div>
+			<div class="exam">
+				<div class="code">
+					&lt;form&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;性别：&lt;input type="radio" name="sex" vaule="male"&gt;男
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&lt;input type="radio" name="sex" vaule="female"&gt;女
+				</div>
+				<div class="code">
+					&lt;/form&gt;
+				</div>
+			</div>
+			<div class="half">
+				运行实例
+			</div>
+			<div class="exam">
+				<form>
+					性别：<input type="radio" name="sex" value="male" />男
+					<input type="radio" name="sex" value="female" />女
+				</form>
+			</div>
+		</div>
+		<h2>5.复选框</h2>
+		<div class="text">
+			复选框与单选按钮类似，但是可以进行多选操作。
+		</div>
+		<div class="box">
+			<div class="title">
+				复选框实例
+			</div>
+			<div class="half">
+				HTML代码
+			</div>
+			<div class="exam">
+				<div class="code">
+					&lt;form&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;爱好：
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&lt;input type="checkbox" name="hobby" vaule="1"&gt;读书
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&lt;input type="checkbox" name="hobby" vaule="2"&gt;音乐
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&lt;input type="checkbox" name="hobby" vaule="3"&gt;运动
+				</div>
+				<div class="code">
+					&lt;/form&gt;
+				</div>
+			</div>
+			<div class="half">
+				运行实例
+			</div>
+			<div class="exam">
+				<form>
+					爱好：
+					<input type="checkbox" name="hobby" value="1" />读书
+					<input type="checkbox" name="hobby" value="2" />音乐
+					<input type="checkbox" name="hobby" value="3" />运动
+				</form>
+			</div>
+		</div>
+		<h2>6.下拉列表</h2>
+		<div class="text">
+			下拉列表与复选框类似，选项以下拉列表形式呈现。
+		</div>
+		<div class="text">
+			下拉列表分为普通下拉列表、分组下拉列表和多选下拉列表。
+		</div>
+		<div class="box">
+			<div class="title">
+				下拉列表实例
+			</div>
+			<div class="half">
+				HTML代码
+			</div>
+			<div class="exam">
+				<div class="code">
+					&lt;form&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;学历：
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&lt;select name="degree"&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;option vaule="0"&gt;--请选择--&lt;/option&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;option vaule="1"&gt;专科&lt;/option&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;option vaule="2"&gt;本科&lt;/option&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;option vaule="3"&gt;硕士&lt;/option&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;option vaule="4"&gt;博士及以上&lt;/option&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&lt;/select&gt;
+				</div>
+				<div class="code">
+					&lt;/form&gt;
+				</div>
+			</div>
+			<div class="half">
+				运行实例
+			</div>
+			<div class="exam">
+				<form>
+					学历：
+					<select name="degree">
+						<option value="0">--请选择--</option>
+						<option value="1">专科</option>
+						<option value="2">本科</option>
+						<option value="3">硕士</option>
+						<option value="4">博士及以上</option>
+					</select>
+				</form>
+			</div>
+			<div class="title">
+				分组下拉列表实例
+			</div>
+			<div class="half">
+				HTML代码
+			</div>
+			<div class="exam">
+				<div class="code">
+					&lt;form&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&lt;select&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;option vaule="0"&gt;--请选择--&lt;/option&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;optgroup label="咖啡"&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option vaule="a"&gt;白咖啡&lt;/option&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option vaule="b"&gt;黑咖啡&lt;/option&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;/optgroup&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;optgroup label="茶"&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option vaule="c"&gt;红茶&lt;/option&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option vaule="d"&gt;绿茶&lt;/option&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;/optgroup&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&lt;/select&gt;
+				</div>
+				<div class="code">
+					&lt;/form&gt;
+				</div>
+			</div>
+			<div class="half">
+				运行实例
+			</div>
+			<div class="exam">
+				<form>
+					<select>
+						<option value="0">--请选择--</option>
+						<optgroup label="咖啡">
+							<option value="a">白咖啡</option>
+							<option value="b">黑咖啡</option>
+						</optgroup>
+						<optgroup label="茶">
+							<option value="c">红茶</option>
+							<option value="d">绿茶</option>
+						</optgroup>
+					</select>
+				</form>
+			</div>
+			<div class="title">
+				多选下拉列表实例
+			</div>
+			<div class="half">
+				HTML代码
+			</div>
+			<div class="exam">
+				<div class="code">
+					&lt;form&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&lt;select size="4" multiple="multiple"&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="a"&gt;果汁&lt;/option&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="a"&gt;牛奶&lt;/option&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="a"&gt;茶&lt;/option&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="a"&gt;咖啡&lt;/option&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&lt;/select&gt;
+				</div>
+				<div class="code">
+					&lt;/form&gt;
+				</div>
+			</div>
+			<div class="half">
+				运行实例
+			</div>
+			<div class="exam">
+				<form>
+					<select size="4" multiple="multiple">
+						<option value="a">果汁</option>
+						<option value="b">牛奶</option>
+						<option value="c">茶</option>
+						<option value="d">咖啡</option>
+					</select>
+				</form>
+			</div>
+		</div>
+		<h2>7.文本域</h2>
+		<div class="text">
+			文本域用于输入多行文本。
+		</div>
+		<div class="box">
+			<div class="title">
+				文本域实例
+			</div>
+			<div class="half">
+				HTML代码
+			</div>
+			<div class="exam">
+				<div class="code">
+					&lt;form&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;备注：&lt;textarea name="comment" rows="5" cols="30"&gt;&lt;/textarea&gt;
+				</div>
+				<div class="code">
+					&lt;/form&gt;
+				</div>
+			</div>
+			<div class="half">
+				运行实例
+			</div>
+			<div class="exam">
+				<form>
+					备注：<textarea name="comment" rows="5" cols="30"></textarea>
+				</form>
+			</div>
+		</div>
+		<h2>8.按钮</h2>
+		<div class="text">
+			按钮分为“提交”按钮、“重置”按钮和“普通”按钮。
+		</div>
+		<div class="text">
+			单击提交按钮时，表单内容会被传送到另一个文件。表单的动作属性定义了目的文件的文件名。由动作属性定义的这个文件通常会对接收到的输入数据进行相关的处理。
+		</div>
+		<div class="text" style="color: grey; font-size: 10px;">
+			其实这一段我也没学会，就没有运行实例辣。_(・ω・｣ ∠)_
+		</div>
+		<div class="text">
+			当用户单击“重置”按钮时，表单内的内容将会重置。
+		</div>
+		<div class="box">
+			<div class="title">
+				部分按钮实例
+			</div>
+			<div class="half">
+				HTML代码
+			</div>
+			<div class="exam">
+				<div class="code">
+					&lt;form&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&lt;input type="submit" value="提交" /&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&lt;input type="reset" value="重置" /&gt;
+				</div>
+				<div class="code">
+					&nbsp;&nbsp;&lt;input type="button" value="返回" /&gt;
+				</div>
+				<div class="code">
+					&lt;/form&gt;
+				</div>
+			</div>
+			<div class="half">
+				运行实例
+			</div>
+			<div class="exam">
+				<form>
+					<input type="submit" value="提交" />
+					<input type="reset" value="重置" />
+					<input type="button" value="返回" />
+				</form>
+			</div>
+		</div>
+		<h2>9.隐藏字段</h2>
+		<div class="text">
+			隐藏字段的作用是需要表单完成一些特定操作，而这些操作是不需要用户看到的。
+		</div>
+		<div class="box">
+			<div class="title">
+				隐藏字段实例
+			</div>
+			<div class="half">
+				HTML代码
+			</div>
+			<div class="exam">
+				<div class="code">
+					&lt;form&gt;
+				</div>
+				<div class="code">
+					&lt;/form&gt;
+				</div>
+			</div>
+			<div class="half">
+				运行实例<small>（因为字段被隐藏了，所以看不见。<del>绝不是皇帝的运行辣_(・ω・｣ ∠)_</del>）</small>
+			</div>
+			<div class="exam">
+				<form>
+					<input type="hidden" name="userID" value="1001" />
+				</form>
+			</div>
+		</div>
+		
+	</body>
+</html>

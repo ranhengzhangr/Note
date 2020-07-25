@@ -1,0 +1,43 @@
+/* CSS Document */
+
+html {
+	padding-bottom: 50px;
+}
+
+.text {
+	text-indent: 2em;
+}
+
+.code {
+	font-family: "新宋体";
+}
+
+.box {
+	box-shadow: 5px 5px 10px lightgrey, -5px 5px 10px lightgrey, 5px -5px 10px lightgrey, -5px -5px 10px lightgrey;
+	background-color: lightgrey;
+	border-radius: 20px;
+	max-width: 600px;
+	margin: 15px 5px;
+	padding: 5px 15px;
+}
+
+.title {
+	font-size: 16px;
+	margin-bottom: 5px;
+	padding-left: 5px;
+}
+
+.half {
+	font-size: 14px;
+	font-weight: 600;
+	padding-left: 5px;
+	margin-bottom: 5px;
+}
+
+.exam {
+	background-color: white;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.65), -10px -10px 20px rgba(256, 256, 256, 0.85);
+	border-radius: 15px;
+	padding: 10px;
+	margin-bottom: 15px;
+}
